@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #eb1717;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Pendaftaran Pasien</h2>
+        <form action="#" method="post">
+            <label for="nik">NIK:</label>
+            <input type="text" id="nik" name="nik" placeholder="Masukkan NIK Anda" required>
+
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select id="jenis_kelamin" name="jenis_kelamin" required>
+                <option value="">Pilih Jenis Kelamin</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+
+            <label for="ttl">Tempat, Tanggal Lahir:</label>
+            <input type="text" id="ttl" name="ttl" placeholder="Contoh: Singkawang, 01-01-2000" required>
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap" required></textarea>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="">Pilih Status</option>
+                <option value="Belum Menikah">Belum Menikah</option>
+                <option value="Menikah">Menikah</option>
+                <option value="Cerai">Cerai</option>
+            </select>
+
+
+            <label for="pekerjaan">Pekerjaan:</label>
+            <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Masukkan pekerjaan" required>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
